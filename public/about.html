@@ -4,7 +4,7 @@
 
       <nav>
 
-                <a href="show2.html.erb">
+                <a href="genres.html">
                         GENRES  
                 </a>
 
@@ -17,22 +17,14 @@
                 </a>
         </nav>
 
-<a href = "genres.html">  </a>
+<a href = "genres.html"> GENRES </a>
 
-<a href="songs.html">	  </a>
+<a href="songs.html">	SONGS  </a>
 
-<a href="about.html">	  </a>
+<a href="about.html">	ABOUT  </a>
 
 
 <% @tracks.each do |track| %>
 
   <%= "<iframe width='50%' height='250' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{track.id}&amp;auto_play=false&amp;hide_related=false&amp;visual=true'></iframe>".html_safe %>
 <% end %>
-
-
-
-
-
-
-
-
